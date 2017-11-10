@@ -1,0 +1,248 @@
+h1, h2, h3, h4, h5, p {
+  font-family: "Helvetica"; }
+
+html, body {
+  background-color: #fff;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+  html #header, body #header {
+    height: 100px;
+    width: 100%; }
+    html #header .text, body #header .text {
+      width: 400px;
+      margin-right: 200px;
+      text-align: center;
+      float: right; }
+      html #header .text h3, body #header .text h3 {
+        font-size: 20px;
+        color: #229c8f; }
+      html #header .text p, body #header .text p {
+        font-size: 12px;
+        margin-bottom: 20px; }
+  @media screen and (max-width: 800px) {
+    html #header .text, body #header .text {
+      width: 380px;
+      margin: 0 auto;
+      float: none; } }
+  html #form, body #form {
+    height: 400px;
+    width: 100%;
+    background-image: url("../assets/background.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: block;
+    margin: 0; }
+    html #form form, body #form form {
+      width: 380px;
+      margin-top: 20px;
+      background-color: #fff;
+      margin-right: 200px;
+      float: right;
+      list-style: none;
+      border: solid 2px #ffd046;
+      border-radius: 5px; }
+      html #form form h3, body #form form h3 {
+        font-size: 16px;
+        margin-left: 10px; }
+      html #form form .input, body #form form .input {
+        width: 360px;
+        height: 40px;
+        margin: 0 auto 10px;
+        border: solid 1px #c5c5c5;
+        border-radius: 5px; }
+      html #form form .input:hover, body #form form .input:hover {
+        border: solid 1px #fc8f00; }
+      html #form form input[type=radio], body #form form input[type=radio] {
+        width: 20px;
+        height: 20px;
+        margin: 10px 10px;
+        border: solid 1px #c5c5c5;
+        border-radius: 1px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: none;
+        clear: none;
+        float: left; }
+      html #form form input[type=radio]:checked, body #form form input[type=radio]:checked {
+        width: 20px;
+        height: 20px;
+        margin: 10px 10px;
+        border: solid 3px #fc8f00;
+        border-radius: 1px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        focus: none;
+        outline: none; }
+      html #form form input[type=submit], body #form form input[type=submit] {
+        width: 360px;
+        height: 40px;
+        margin: 0 auto 10px 10px;
+        border: solid 1px #ffd046;
+        background-color: #fc8f00;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 16px; }
+      html #form form label, body #form form label {
+        display: block;
+        margin: 10px 10px; }
+      html #form form .progress-bar, body #form form .progress-bar {
+        width: 360px;
+        height: 20px;
+        margin: 0 0 10px 10px;
+        background-color: #f3f3f3;
+        border: solid 1px #e2e2e2; }
+        html #form form .progress-bar p, body #form form .progress-bar p {
+          font-size: 12px;
+          text-align: center;
+          line-height: 0; }
+      html #form form .secure, body #form form .secure {
+        width: 360px;
+        height: 20px;
+        margin-left: 10px; }
+        html #form form .secure p, body #form form .secure p {
+          font-size: 10px;
+          text-align: center;
+          line-height: 1;
+          color: #229c8f; }
+  @media screen and (max-width: 800px) {
+    html #form, body #form {
+      background-position: left center;
+      padding-top: 20px; }
+      html #form form, body #form form {
+        margin: 0 auto;
+        float: none; } }
+  html #icons, body #icons {
+    display: block;
+    background-color: #75c5bc;
+    height: auto;
+    margin: 0; }
+    html #icons .icon-content, body #icons .icon-content {
+      text-align: center;
+      padding: 20px; }
+      html #icons .icon-content h3, body #icons .icon-content h3 {
+        margin: 20px auto 50px;
+        color: #fff; }
+      html #icons .icon-content .icon-lockup, body #icons .icon-content .icon-lockup {
+        margin: 0 auto;
+        width: 800px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around; }
+        html #icons .icon-content .icon-lockup .people, body #icons .icon-content .icon-lockup .people {
+          width: 350px;
+          -webkit-box-ordinal-group: 2;
+          -webkit-order: 1;
+          -ms-flex-order: 1;
+          order: 1;
+          padding: 0 10px; }
+          html #icons .icon-content .icon-lockup .people img, body #icons .icon-content .icon-lockup .people img {
+            height: 120px; }
+          html #icons .icon-content .icon-lockup .people p, body #icons .icon-content .icon-lockup .people p {
+            color: #fff;
+            font-size: 12px; }
+        html #icons .icon-content .icon-lockup .certificate, body #icons .icon-content .icon-lockup .certificate {
+          width: 350px;
+          -webkit-box-ordinal-group: 3;
+          -webkit-order: 2;
+          -ms-flex-order: 2;
+          order: 2;
+          padding: 0 10px; }
+          html #icons .icon-content .icon-lockup .certificate img, body #icons .icon-content .icon-lockup .certificate img {
+            height: 120px; }
+          html #icons .icon-content .icon-lockup .certificate p, body #icons .icon-content .icon-lockup .certificate p {
+            color: #fff;
+            font-size: 12px; }
+        html #icons .icon-content .icon-lockup .hearing, body #icons .icon-content .icon-lockup .hearing {
+          width: 350px;
+          -webkit-box-ordinal-group: 4;
+          -webkit-order: 3;
+          -ms-flex-order: 3;
+          order: 3;
+          padding: 0 10px; }
+          html #icons .icon-content .icon-lockup .hearing img, body #icons .icon-content .icon-lockup .hearing img {
+            height: 120px; }
+          html #icons .icon-content .icon-lockup .hearing p, body #icons .icon-content .icon-lockup .hearing p {
+            color: #fff;
+            font-size: 12px; }
+  @media screen and (max-width: 800px) {
+    html #icons, body #icons {
+      height: auto; }
+      html #icons .icon-content .icon-lockup, body #icons .icon-content .icon-lockup {
+        display: block;
+        margin: 0 auto;
+        width: auto; }
+        html #icons .icon-content .icon-lockup .people, html #icons .icon-content .icon-lockup .certificate, html #icons .icon-content .icon-lockup .hearing, body #icons .icon-content .icon-lockup .people, body #icons .icon-content .icon-lockup .certificate, body #icons .icon-content .icon-lockup .hearing {
+          margin: 50px auto; } }
+  html #partners, body #partners {
+    display: block;
+    height: auto;
+    margin: 0; }
+    html #partners .partners-content, body #partners .partners-content {
+      text-align: center;
+      padding: 20px; }
+      html #partners .partners-content span, body #partners .partners-content span {
+        display: block;
+        width: 800px;
+        margin: 0 auto;
+        border-top: solid 1px #000;
+        margin-bottom: 30px; }
+      html #partners .partners-content .partners-lockup, body #partners .partners-content .partners-lockup {
+        margin: 0 auto;
+        width: 800px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around; }
+        html #partners .partners-content .partners-lockup .msn, body #partners .partners-content .partners-lockup .msn {
+          -webkit-box-ordinal-group: 2;
+          -webkit-order: 1;
+          -ms-flex-order: 1;
+          order: 1;
+          height: 30px; }
+        html #partners .partners-content .partners-lockup .daily-mail, body #partners .partners-content .partners-lockup .daily-mail {
+          -webkit-box-ordinal-group: 3;
+          -webkit-order: 2;
+          -ms-flex-order: 2;
+          order: 2;
+          height: 30px; }
+        html #partners .partners-content .partners-lockup .telegraph, body #partners .partners-content .partners-lockup .telegraph {
+          -webkit-box-ordinal-group: 4;
+          -webkit-order: 3;
+          -ms-flex-order: 3;
+          order: 3;
+          height: 30px; }
+        html #partners .partners-content .partners-lockup .mirror, body #partners .partners-content .partners-lockup .mirror {
+          -webkit-box-ordinal-group: 5;
+          -webkit-order: 4;
+          -ms-flex-order: 4;
+          order: 4;
+          height: 30px; }
+      html #partners .partners-content .policies, body #partners .partners-content .policies {
+        margin-top: 30px; }
+        html #partners .partners-content .policies p, body #partners .partners-content .policies p {
+          font-size: 10px;
+          color: #7b7b7d; }
+        html #partners .partners-content .policies a, body #partners .partners-content .policies a {
+          color: #2d75c1; }
+        html #partners .partners-content .policies a:hover, body #partners .partners-content .policies a:hover {
+          color: #000; }
+        html #partners .partners-content .policies a:visited, body #partners .partners-content .policies a:visited {
+          color: #000; }
+  @media screen and (max-width: 800px) {
+    html #partners .partners-content span, body #partners .partners-content span {
+      width: 80%; }
+    html #partners .partners-content .partners-lockup, body #partners .partners-content .partners-lockup {
+      width: auto;
+      display: inline-block; }
+      html #partners .partners-content .partners-lockup .msn, html #partners .partners-content .partners-lockup .daily-mail, html #partners .partners-content .partners-lockup .telegraph, html #partners .partners-content .partners-lockup .mirror, body #partners .partners-content .partners-lockup .msn, body #partners .partners-content .partners-lockup .daily-mail, body #partners .partners-content .partners-lockup .telegraph, body #partners .partners-content .partners-lockup .mirror {
+        padding: 10px; } }
