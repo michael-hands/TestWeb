@@ -28,7 +28,6 @@ html, body {
   html #form, body #form {
     height: 400px;
     width: 100%;
-    background-image: url("../assets/background.jpg");
     background-size: cover;
     background-position: center center;
     display: block;
