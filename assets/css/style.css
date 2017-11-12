@@ -2,7 +2,7 @@ h1, h2, h3, h4, h5, p, label {
   font-family: "Helvetica"; }
 
 html, body {
-  background-color: #fff;
+  background-color: #ffffff;
   width: 100%;
   margin: 0;
   padding: 0; }
@@ -10,16 +10,18 @@ html, body {
     height: 100px;
     width: 100%; }
     html #header .text, body #header .text {
+      color: #229c91;
       width: 400px;
       margin-right: 200px;
       text-align: center;
       float: right; }
       html #header .text h3, body #header .text h3 {
-        font-size: 20px;
-        color: #229c8f; }
+        font-size: 20px; }
       html #header .text p, body #header .text p {
         font-size: 12px;
         margin-bottom: 20px; }
+      html #header .text span, body #header .text span {
+        color: #012d6c; }
   @media screen and (max-width: 800px) {
     html #header .text, body #header .text {
       width: 380px;
@@ -28,18 +30,18 @@ html, body {
   html #form, body #form {
     height: 400px;
     width: 100%;
+    background: url("../img/background.jpg") center center;
     background-size: cover;
-    background-position: center center;
     display: block;
     margin: 0; }
     html #form form, body #form form {
       width: 380px;
       margin-top: 20px;
-      background-color: #fff;
+      background-color: #ffffff;
       margin-right: 200px;
       float: right;
       list-style: none;
-      border: solid 2px #ffd046;
+      border: solid 2px #ffcf47;
       border-radius: 5px; }
       html #form form h3, body #form form h3 {
         font-size: 16px;
@@ -50,8 +52,8 @@ html, body {
         margin: 0 auto 10px;
         border: solid 1px #c5c5c5;
         border-radius: 5px; }
-      html #form form .input:hover, body #form form .input:hover {
-        border: solid 1px #fc8f00; }
+        html #form form .input:hover, body #form form .input:hover {
+          border: solid 1px #ffcf47; }
       html #form form input[type=radio], body #form form input[type=radio] {
         width: 20px;
         height: 20px;
@@ -63,27 +65,21 @@ html, body {
         appearance: none;
         outline: none;
         clear: none;
-        float: left; }
-      html #form form input[type=radio]:checked, body #form form input[type=radio]:checked {
-        width: 20px;
-        height: 20px;
-        margin: 10px 10px;
-        border: solid 3px #fc8f00;
-        border-radius: 1px;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        focus: none;
-        outline: none; }
+        float: left;
+        cursor: pointer; }
+        html #form form input[type=radio]:checked, body #form form input[type=radio]:checked {
+          border: solid 3px #ffcf47;
+          cursor: pointer; }
       html #form form input[type=submit], body #form form input[type=submit] {
         width: 360px;
         height: 40px;
         margin: 0 auto 10px 10px;
-        border: solid 1px #ffd046;
-        background-color: #fc8f00;
+        border: solid 1px #ffcf47;
+        background-color: #fc8706;
         border-radius: 5px;
         color: #fff;
-        font-size: 16px; }
+        font-size: 16px;
+        cursor: pointer; }
       html #form form label, body #form form label {
         display: block;
         margin: 10px 10px; }
@@ -91,8 +87,8 @@ html, body {
         width: 360px;
         height: 20px;
         margin: 0 0 10px 10px;
-        background-color: #f3f3f3;
-        border: solid 1px #e2e2e2; }
+        background-color: #dfdfdf;
+        border: solid 1px #c5c5c5; }
         html #form form .progress-bar p, body #form form .progress-bar p {
           font-size: 12px;
           text-align: center;
@@ -105,7 +101,7 @@ html, body {
           font-size: 10px;
           text-align: center;
           line-height: 1;
-          color: #229c8f; }
+          color: #229c91; }
   @media screen and (max-width: 800px) {
     html #form, body #form {
       background-position: left center;
@@ -230,9 +226,9 @@ html, body {
         margin-top: 30px; }
         html #partners .partners-content .policies p, body #partners .partners-content .policies p {
           font-size: 10px;
-          color: #7b7b7d; }
+          color: #7b7b79; }
         html #partners .partners-content .policies a, body #partners .partners-content .policies a {
-          color: #2d75c1; }
+          color: #4188bc; }
         html #partners .partners-content .policies a:hover, body #partners .partners-content .policies a:hover {
           color: #000; }
         html #partners .partners-content .policies a:visited, body #partners .partners-content .policies a:visited {

@@ -1,167 +1,164 @@
+//Variables
+$bg-color: #ffffff
+$secondary-bg-color: #75c5bc
+$text-color: #229c91
+$secondary-text-color: #012d6c
+$border-color: #c5c5c5
+$secondary-border-color: #ffcf47
+$btn-color: #fc8706
+$font-family: "Helvetica"
+$policy-text-color: #7b7b79
+$link-color: #4188bc
+
 h1, h2, h3, h4, h5, p, label
-    font-family: "Helvetica"
+    font-family: $font-family
 
 html, body
-    background-color: #fff
-    width: 100% 
+    background-color: $bg-color
+    width: 100%
     margin: 0
     padding: 0
 
     #header
         height: 100px
         width: 100%
-        
+
         .text
+            color: $text-color
             width: 400px
             margin-right: 200px
             text-align: center
             float: right
-        
+
             h3
                 font-size: 20px
-                color: #229c8f
 
             p
                 font-size: 12px
                 margin-bottom: 20px
-                
+
+            span
+              color: $secondary-text-color
+
     @media screen and (max-width: 800px)
         #header
-            
+
             .text
                 width: 380px
                 margin: 0 auto
                 float: none
-                
-                
-                
-                
-                
-                
-                
-            
+
     #form
         height: 400px
         width: 100%
+        background: url("../img/background.jpg") center center
         background-size: cover
-        background-position: center center
         display: block
         margin: 0
-        
+
         form
             width: 380px
             margin-top: 20px
-            background-color: #fff
+            background-color: $bg-color
             margin-right: 200px
             float: right
             list-style: none
-            border: solid 2px #ffd046
+            border: solid 2px $secondary-border-color
             border-radius: 5px
-            
+
             h3
                 font-size: 16px
                 margin-left: 10px
-            
+
             .input
                 width: 360px
                 height: 40px
                 margin: 0 auto 10px
-                border: solid 1px #c5c5c5
+                border: solid 1px $border-color
                 border-radius: 5px
-                
-            .input:hover
-                border: solid 1px #fc8f00
-                
+
+                &:hover
+                    border: solid 1px $secondary-border-color
+
             input[type=radio]
                 width: 20px
                 height: 20px
                 margin: 10px 10px
-                border: solid 1px #c5c5c5
+                border: solid 1px $border-color
                 border-radius: 1px
                 appearance: none
                 outline: none
                 clear: none
                 float: left
-                
-            input[type=radio]:checked
-                width: 20px
-                height: 20px
-                margin: 10px 10px
-                border: solid 3px #fc8f00
-                border-radius: 1px
-                appearance: none
-                focus: none
-                outline: none
-                
+                cursor: pointer
+
+                &:checked
+                    border: solid 3px $secondary-border-color
+                    cursor: pointer
+
+
             input[type=submit]
                 width: 360px
                 height: 40px
                 margin: 0 auto 10px 10px
-                border: solid 1px #ffd046
-                background-color: #fc8f00
+                border: solid 1px $secondary-border-color
+                background-color: $btn-color
                 border-radius: 5px
                 color: #fff
                 font-size: 16px
-                
-                
+                cursor: pointer
+
+
             label
                 display: block
                 margin: 10px 10px
-                
+
             .progress-bar
                 width: 360px
                 height: 20px
                 margin: 0 0 10px 10px
-                background-color: #f3f3f3
-                border: solid 1px #e2e2e2
-                
+                background-color: lighten($border-color, 10%)
+                border: solid 1px $border-color
+
                 p
                     font-size: 12px
                     text-align: center
                     line-height: 0
-                    
+
             .secure
                 width: 360px
                 height: 20px
                 margin-left: 10px
-                
+
                 p
                     font-size: 10px
                     text-align: center
                     line-height: 1
-                    color: #229c8f
-                    
+                    color: $text-color
+
     @media screen and (max-width: 800px)
         #form
             background-position: left center
             padding-top: 20px
-            
+
             form
                 margin: 0 auto
                 float: none
-                
-                
-                
-                
-                
-                
-                
-                
-        
+
     #icons
         display: block
-        background-color: #75c5bc
+        background-color: $secondary-bg-color
         height: auto
         margin: 0
-        
+
         .icon-content
             text-align: center
             padding: 20px
-        
+
             h3
                 margin: 20px auto 50px
                 color: #fff
-                
+
             .icon-lockup
                 margin: 0 auto
                 width: 800px
@@ -172,10 +169,10 @@ html, body
                     width: 350px
                     order: 1
                     padding: 0 10px
-                    
+
                     img
                         height: 120px
-                        
+
                     p
                         color: #fff
                         font-size: 12px
@@ -184,10 +181,10 @@ html, body
                     width: 350px
                     order: 2
                     padding: 0 10px
-                    
+
                     img
                         height: 120px
-                        
+
                     p
                         color: #fff
                         font-size: 12px
@@ -196,14 +193,14 @@ html, body
                     width: 350px
                     order: 3
                     padding: 0 10px
-                    
+
                     img
                         height: 120px
-                        
+
                     p
                         color: #fff
                         font-size: 12px
-            
+
     @media screen and (max-width: 800px)
         #icons
             height: auto
@@ -214,82 +211,75 @@ html, body
                     display: block
                     margin: 0 auto
                     width: auto
-                    
+
                     .people, .certificate, .hearing
                         margin: 50px auto
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+
     #partners
         display: block
         height: auto
         margin: 0
-        
+
         .partners-content
             text-align: center
             padding: 20px
-            
+
             span
                 display: block
                 width: 800px
                 margin: 0 auto
                 border-top: solid 1px #000
                 margin-bottom: 30px
-            
+
             .partners-lockup
                 margin: 0 auto
                 width: 800px
                 display: flex
                 justify-content: space-around
-                
+
                 .msn
                     order: 1
                     height: 30px
-                
+
                 .daily-mail
                     order: 2
                     height: 30px
-                    
+
                 .telegraph
                     order: 3
                     height: 30px
-                    
+
                 .mirror
                     order: 4
                     height: 30px
-                    
+
             .policies
                 margin-top: 30px
-                
+
                 p
                     font-size: 10px
-                    color: #7b7b7d
-                    
+                    color: $policy-text-color
+
                 a
-                    color: #2d75c1
-                    
+                    color: $link-color
+
                 a:hover
                     color: #000
-                
+
                 a:visited
                     color: #000
-                    
+
     @media screen and (max-width: 800px)
         #partners
-            
+
             .partners-content
-                
+
                 span
                     width: 80%
-                
+
                 .partners-lockup
                     width: auto
                     display: inline-block
-                    
+
                     .msn, .daily-mail, .telegraph, .mirror
                         padding: 10px
